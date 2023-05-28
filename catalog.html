@@ -5,7 +5,7 @@
     <title>Гостиницы Седоны</title>
   </head>
   <body>
-    <header class="main-header" data-test="header">
+    <header class="catalog-header" data-test="header">
       <a href="index.html">
         <img src="http://dummyimage.com/100" alt="Логотип туристического городка Седона">
       </a>
@@ -18,7 +18,7 @@
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Гостиницы</a>
+            <a href="#" class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-icons-list">
@@ -36,8 +36,23 @@
         <a href="#" class="button">Хочу сюда!</a>
       </nav>
     </header>
-    <main>
 
+    <main class="main-catalog">
+      <section class="main-catalog-filter">
+        <h1 class="main-catalog-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a href="#">
+              <span class="visually-hidden">Гостиницы Седоны</span>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
 
