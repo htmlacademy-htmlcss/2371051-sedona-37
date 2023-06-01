@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header" data-test="header">
-      <a href="index.html">
+      <a href="index.html" aria-current="page">
         <img src="images/logo.svg" width="140" height="70" alt="Логотип туристического городка Седона.">
       </a>
       <nav class="navigation">
@@ -30,7 +30,7 @@
           </li>
           <li class="navigation-icon">
             <a href="#" class="navigation-icon-link">
-              <p class="visually-hidden">Избранное</p>
+              <span class="visually-hidden">Избранное</span>
               <span class="fav-number">12</span>
             </a>
           </li>
@@ -96,14 +96,14 @@
       <section class="hotel-search" data-test="search">
         <h2 class="hotel-search-title">Заинтересовались?</h2>
         <p class="hotel-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
+        <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
-          <button class="subscribe-button" type="submit">Подписаться</button>
+          <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

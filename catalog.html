@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="catalog-header" data-test="header">
+    <header class="main-header" data-test="header">
       <a href="index.html">
         <img src="images/logo.svg" alt="Логотип туристического городка Седона.">
       </a>
@@ -19,7 +19,7 @@
             <a href="#" class="navigation-link">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link navigation-link-current">Гостиницы</a>
+            <a href="catalog.html" class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-icons-list">
@@ -30,7 +30,7 @@
           </li>
           <li class="navigation-icon">
             <a href="#" class="navigation-icon-link">
-              <p class="visually-hidden">Избранное</p>
+              <span class="visually-hidden">Избранное</span>
               <span class="fav-number">12</span>
             </a>
           </li>
@@ -49,7 +49,7 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
       </header>
@@ -141,6 +141,8 @@
           <li class="housing-card-item">
             <a class="housing-card-link" href="#">
               <h3 class="housing-card-title">Amara Resort & Spa</h3>
+            </a>
+            <a class="housing-card-img-link" href="#">
               <img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa.">
             </a>
             <span class="housing-card-type">Гостиница</span>
@@ -153,6 +155,8 @@
           <li class="housing-card-item">
             <a class="housing-card-link" href="#">
               <h3 class="housing-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <a class="housing-card-img-link" href="#">
               <img src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Гостиница Villas at Poco Diablo.">
             </a>
             <span class="housing-card-type">Гостиница</span>
@@ -165,6 +169,8 @@
           <li class="housing-card-item">
             <a class="housing-card-link" href="#">
               <h3 class="housing-card-title">Desert Quail Inn</h3>
+            </a>
+            <a class="housing-card-img-link" href="#">
               <img src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Гостиница Desert Quail Inn.">
             </a>
             <span class="housing-card-type">Гостиница</span>
@@ -177,6 +183,8 @@
           <li class="housing-card-item">
             <a class="housing-card-link" href="#">
               <h3 class="housing-card-title">GreenTree Inn</h3>
+            </a>
+            <a class="housing-card-img-link" href="#">
               <img src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Гостиница GreenTree Inn.">
             </a>
             <span class="housing-card-type">Гостиница</span>
@@ -213,7 +221,7 @@
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
-          <button class="subscribe-button" type="submit">Подписаться</button>
+          <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
