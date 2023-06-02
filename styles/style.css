@@ -64,20 +64,48 @@ body {
 
 .hero {
   background-image: url("../images/hero-background.jpg");
+  background-repeat: no-repeat;
 }
 
 .about-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.reasons-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-description {
+  text-align: center;
+}
+
+.background-blue {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.visit-sedona {
   font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-align: center;
 text-transform: uppercase;
 color: #000000;
-}
-
-.reasons-text {
-  font-size: 22px;
-line-height: 26px;
-text-align: center;
-color: #333333;
 }
