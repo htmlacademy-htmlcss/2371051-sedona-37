@@ -61,3 +61,23 @@ body {
   color: #FFFFFF;
   background-color: #756157;
 }
+
+.hero {
+  background-image: url("../images/hero-background.jpg");
+}
+
+.about-text {
+  font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+
+.reasons-text {
+  font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
+}
