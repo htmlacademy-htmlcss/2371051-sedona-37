@@ -62,6 +62,10 @@ body {
   background-color: #756157;
 }
 
+.button-blue {
+  background-color: #82B3D3;
+}
+
 .hero {
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
@@ -144,7 +148,7 @@ body {
   text-align: center;
 }
 
-.subscribe {
+.subscribe-with-background {
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-color: #82B3D3;
@@ -165,10 +169,6 @@ body {
   text-align: center;
 }
 
-.button-blue {
-  background-color: #82B3D3;
-}
-
 .tel-link {
   font-size: 40px;
   line-height: 40px;
@@ -176,4 +176,83 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+/* Страница Гостиницы Седоны */
+.catalog-filter {
+  background-image: url("../images/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.control {
+  line-height: 23px;
+}
+
+.housing-filter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.housing-card-link {
+  text-decoration: none;
+}
+
+.housing-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.housing-card-price {
+  text-align: right;
+}
+
+.active-button {
+  background-color: #7DB54F;
+}
+
+.housing-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #F2F2F2;;
 }
