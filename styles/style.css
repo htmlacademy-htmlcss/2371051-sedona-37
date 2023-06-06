@@ -109,3 +109,37 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+.visit-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-description {
+  text-align: center;
+}
+
+.hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hotel-search-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
