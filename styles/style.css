@@ -21,7 +21,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
 }
 
 .main-header {
@@ -272,5 +272,4 @@ body {
 .pagination-link-current {
   color: #000000;
   background-color: #F2F2F2;
-  ;
 }
