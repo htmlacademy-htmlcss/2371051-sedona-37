@@ -161,6 +161,11 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.subscribe-with-background .subscribe-title {
+  color: #FFFFFF;
 }
 
 .subscribe-description {
