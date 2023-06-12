@@ -291,6 +291,7 @@ body {
 }
 
 .footer-container {
+  width: 1060px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
