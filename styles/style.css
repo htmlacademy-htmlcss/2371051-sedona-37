@@ -63,6 +63,18 @@ body {
 
 .navigation {
   display: flex;
+  width: 1200px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 339px;
+}
+
+.navigation-icons-list {
+  max-width: 88px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -116,6 +128,8 @@ body {
 }
 
 .about-text {
+  width: 620px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -125,10 +139,22 @@ body {
 }
 
 .reasons-text {
+  width: 651px;
+  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item {
+  background-color: #82B3D3;
+  width: 400px;
 }
 
 .advantages-title {
@@ -146,7 +172,6 @@ body {
 
 .background-blue {
   color: #FFFFFF;
-  background-color: #82B3D3;
 }
 
 .visit-sedona {
@@ -162,6 +187,20 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.services-item {
+  width: 400px;
+}
+
+.services-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .services-title {
