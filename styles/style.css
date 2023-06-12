@@ -175,6 +175,8 @@ body {
 }
 
 .visit-sedona {
+  width: 505px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -184,6 +186,8 @@ body {
 }
 
 .visit-text {
+  width: 490px;
+  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -216,7 +220,14 @@ body {
   text-align: center;
 }
 
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+}
+
 .hotel-search-title {
+  width: 297px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -226,6 +237,8 @@ body {
 }
 
 .hotel-search-description {
+  width: 592px;
+  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
