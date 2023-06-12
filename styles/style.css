@@ -220,14 +220,15 @@ body {
   text-align: center;
 }
 
-.hotel-search {
+.hotel-search-wrapper {
+  width: 592px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hotel-search-title {
-  width: 297px;
-  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -237,8 +238,6 @@ body {
 }
 
 .hotel-search-description {
-  width: 592px;
-  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -246,12 +245,16 @@ body {
 
 .hotel-search .button {
   width: 376px;
+}
+
+.subscribe-wrapper {
+  width: 684px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe-with-background {
-  display: flex;
-  flex-direction: column;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-color: #82B3D3;
@@ -259,8 +262,6 @@ body {
 }
 
 .subscribe-title {
-  width: 404px;
-  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -274,17 +275,9 @@ body {
 }
 
 .subscribe-description {
-  width: 475px;
-  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-}
-
-.subscribe-form {
-  width: 684px;
-  margin: 0 auto;
-  outline: auto;
 }
 
 .tel-link {
