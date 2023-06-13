@@ -69,6 +69,7 @@ body {
   margin: 0;
   padding: 0;
   width: 339px;
+  list-style: none;
 }
 
 .navigation-icons-list {
