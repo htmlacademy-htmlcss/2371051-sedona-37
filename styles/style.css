@@ -150,6 +150,7 @@ body {
 .advantages-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .advantages-item {
