@@ -62,7 +62,6 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
 }
 
 .navigation-list {
@@ -125,6 +124,12 @@ body {
 .hero {
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
+  background-color:#82B3D3;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .about-text {
