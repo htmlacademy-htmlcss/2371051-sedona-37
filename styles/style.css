@@ -124,7 +124,7 @@ body {
 .hero {
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-color:#82B3D3;
+  background-color: #82B3D3;
 }
 
 .hero-img {
@@ -153,14 +153,11 @@ body {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.advantages-item {
-  background-color: #82B3D3;
-  width: 400px;
 }
 
 .advantages-title {
@@ -177,7 +174,23 @@ body {
 }
 
 .background-blue {
+  width: 1200px;
+  background-color: #82B3D3;
   color: #FFFFFF;
+}
+
+.background-blue .advantages-title {
+  color: #FFFFFF;
+}
+
+.background-light-blue {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.background-light {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .visit-sedona {
