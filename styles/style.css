@@ -326,6 +326,13 @@ body {
   line-height: 24px;
 }
 
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1060px;
+}
+
 .control {
   line-height: 23px;
 }
