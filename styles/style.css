@@ -40,6 +40,7 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #F2F2F2;
+  min-width: 1200px;
 }
 
 .page-container {
@@ -346,10 +347,12 @@ body {
 }
 
 .filter-container {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
   width: 1060px;
+}
+
+.catalog-filter-form {
+  display: flex;
 }
 
 .control {
