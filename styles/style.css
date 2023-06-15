@@ -421,8 +421,15 @@ body {
 .housing-card-list {
   width: 1060px;
   margin: 0 auto;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
+}
+
+.housing-card-item {
+  width: 340px;
 }
 
 .pagination-list {
