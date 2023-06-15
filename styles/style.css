@@ -248,9 +248,7 @@ body {
 .hotel-search-wrapper {
   width: 592px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .hotel-search-title {
@@ -275,9 +273,7 @@ body {
 .subscribe-wrapper {
   width: 684px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .subscribe-with-background {
@@ -306,6 +302,13 @@ body {
   text-align: center;
 }
 
+.footer-container {
+  width: 1060px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .tel-link {
   font-size: 40px;
   line-height: 40px;
@@ -313,13 +316,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-}
-
-.footer-container {
-  width: 1060px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
 }
 
 /* Страница Гостиницы Седоны */
