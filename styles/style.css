@@ -177,6 +177,11 @@ body {
   width: 1200px;
   background-color: #82B3D3;
   color: #FFFFFF;
+  display: flex;
+}
+
+.advantages-item:nth-child(5n) {
+  flex-direction: row-reverse;
 }
 
 .background-blue .advantages-title {
