@@ -66,10 +66,12 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 339px;
-  list-style-type: none
+  width: 470px;
+  list-style-type: none;
 }
 
 .navigation-icons-list {
@@ -80,6 +82,9 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 16px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
