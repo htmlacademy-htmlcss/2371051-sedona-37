@@ -14,7 +14,25 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -22,11 +40,43 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #F2F2F2;
+  min-width: 1200px;
+}
+
+.page-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 1200px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-header {
   color: #000000;
-  background-color: #FFFFFF;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 339px;
+  list-style-type: none
+}
+
+.navigation-icons-list {
+  max-width: 88px;
+  margin-left: auto;
+  list-style-type: none;
+  outline: auto;
 }
 
 .navigation-link {
@@ -77,9 +127,17 @@ body {
 .hero {
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
+  background-color: #82B3D3;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
 }
 
 .about-text {
+  width: 620px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -89,10 +147,20 @@ body {
 }
 
 .reasons-text {
+  width: 651px;
+  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none
 }
 
 .advantages-title {
@@ -109,11 +177,33 @@ body {
 }
 
 .background-blue {
-  color: #FFFFFF;
+  width: 1200px;
   background-color: #82B3D3;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.advantages-item:nth-child(5n) {
+  flex-direction: row-reverse;
+}
+
+.background-blue .advantages-title {
+  color: #FFFFFF;
+}
+
+.background-light-blue {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.background-light {
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .visit-sedona {
+  width: 505px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -123,9 +213,26 @@ body {
 }
 
 .visit-text {
+  width: 490px;
+  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none
+}
+
+.services-item {
+  width: 400px;
+}
+
+.services-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .services-title {
@@ -141,6 +248,12 @@ body {
   text-align: center;
 }
 
+.hotel-search-wrapper {
+  width: 592px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .hotel-search-title {
   font-weight: 700;
   font-size: 30px;
@@ -153,6 +266,16 @@ body {
 .hotel-search-description {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+}
+
+.hotel-search .button {
+  width: 376px;
+}
+
+.subscribe-wrapper {
+  width: 684px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -182,6 +305,18 @@ body {
   text-align: center;
 }
 
+.footer-container {
+  width: 1060px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  list-style-type: none;
+  outline: auto;
+}
+
 .tel-link {
   font-size: 40px;
   line-height: 40px;
@@ -205,6 +340,12 @@ body {
   line-height: 78px;
 }
 
+.breadcrumbs-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .breadcrumbs-link {
   color: #FFFFFF;
   text-decoration: none;
@@ -218,6 +359,21 @@ body {
   line-height: 24px;
 }
 
+.filter-container {
+  margin: 0 auto;
+  width: 1060px;
+}
+
+.catalog-filter-form {
+  display: flex;
+}
+
+.catalog-filter-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .control {
   line-height: 23px;
 }
@@ -228,10 +384,18 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-right: 200px;
 }
 
 .select-control {
   font-family: inherit;
+}
+
+.view-icon-list {
+  /* padding: 0;
+  margin: 0; */
+  list-style-type: none;
+  outline: auto;
 }
 
 .housing-card-link {
@@ -272,4 +436,31 @@ body {
 .pagination-link-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.sorting-wrapper {
+  width: 1060px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.housing-card-list {
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none
+}
+
+.housing-card-item {
+  width: 340px;
+}
+
+.pagination-list {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  list-style-type: none
 }
