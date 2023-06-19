@@ -115,6 +115,8 @@ body {
 }
 
 .button {
+  display: block;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -349,6 +351,8 @@ body {
 }
 
 .subscribe-title {
+  margin: 0;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -389,6 +393,7 @@ body {
 }
 
 /* Страница Гостиницы Седоны */
+
 .catalog-filter {
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
