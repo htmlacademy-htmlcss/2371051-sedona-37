@@ -27,6 +27,12 @@
   overflow: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -103,8 +109,6 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  outline: auto;
-  background-color: #82B3D3
 }
 
 .fav-number {
@@ -194,7 +198,6 @@ body {
 
 .advantages-item {
   min-height: 385px;
-  box-sizing: border-box;
 }
 
 .advantages-text-wrapper {
@@ -280,7 +283,6 @@ body {
 .services-item {
   width: 400px;
   min-height: 385px;
-  box-sizing: border-box;
   padding: 80px 85px;
 }
 
@@ -314,7 +316,6 @@ body {
 
 .hotel-search {
   padding: 96px 304px;
-  box-sizing: border-box;
 }
 
 .hotel-search-title {
@@ -395,25 +396,40 @@ body {
 /* Страница Гостиницы Седоны */
 
 .catalog-filter {
+  padding: 70px;
+  padding-top: 35px;
+  min-height: 412px;
+
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-color: #82B3D3;
   color: #FFFFFF;
+  background-size: cover;
 }
 
 .inner-header-title {
+  margin: 0;
+  margin-bottom: 8px;
+
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs-list {
-  list-style-type: none;
-  padding: 0;
+  display: flex;
   margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
+  display: block;
+  min-width: 13px;
+  min-height: 21px;
+
   color: #FFFFFF;
   text-decoration: none;
   font-size: 16px;
@@ -421,14 +437,10 @@ body {
 }
 
 .catalog-filter-title {
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-}
-
-.filter-container {
-  margin: 0 auto;
-  width: 1060px;
 }
 
 .catalog-filter-form {
@@ -446,23 +458,37 @@ body {
 }
 
 .housing-filter-title {
+  margin: 0;
+  margin-right: auto;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 200px;
 }
 
 .select-control {
   font-family: inherit;
+  color: inherit;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .view-icon-list {
-  /* padding: 0;
-  margin: 0; */
+  display: flex;
+  padding: 0;
+  margin: 0;
+
   list-style-type: none;
-  outline: auto;
+}
+
+.view-icon-button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .housing-card-link {
@@ -505,10 +531,12 @@ body {
   background-color: #F2F2F2;
 }
 
+.housing-catalog {
+  padding: 50px 70px 60px;
+}
+
 .sorting-wrapper {
-  width: 1060px;
   display: flex;
-  margin: 0 auto;
 }
 
 .housing-card-list {
@@ -518,7 +546,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style-type: none
+  list-style-type: none;
 }
 
 .housing-card-item {
