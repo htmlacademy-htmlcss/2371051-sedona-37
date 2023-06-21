@@ -69,6 +69,7 @@ body {
 
 .navigation {
   display: flex;
+  min-height: 64px;
   flex-wrap: wrap;
   align-items: center;
   padding-left: 70px;
@@ -111,8 +112,8 @@ body {
 .navigation-icon-link {
   display: block;
   padding: 22px 12px;
-  width: 44px;
-  height: 64px;
+  min-width: 44px;
+  min-height: 64px;
 
   text-align: center;
   text-decoration: none;
@@ -130,8 +131,8 @@ body {
 }
 
 .button {
-  display: block;
-  padding: 8px 50px;
+  display: inline-block;
+  padding: 8px 34px;
 
   font-family: inherit;
   font-weight: 700;
@@ -146,11 +147,17 @@ body {
   border: 0;
 }
 
+.want-here-button {
+  min-width: 120px;
+}
+
 .input {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  border: 0;
+  background-color: #F2F2F2;
 }
 
 .button-blue {
@@ -331,10 +338,11 @@ body {
 
 .hotel-search {
   padding: 96px 304px;
+  text-align: center;
 }
 
 .hotel-search-title {
-  margin: 0 auto;
+  margin: 0;
   min-width: 300px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -351,6 +359,12 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.hotel-search-button {
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .subscribe {
@@ -411,14 +425,14 @@ body {
   padding: 0;
   display: flex;
   min-width: 142px;
-  height: 40px;
+  min-height: 40px;
 
   list-style-type: none;
 }
 
 .footer-social-link {
   display: block;
-  padding: 0 10px;
+  width: 47px;
   height: 40px;
   outline: auto;
 }
