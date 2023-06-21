@@ -111,7 +111,7 @@ body {
 .navigation-icon-link {
   display: block;
   padding: 22px 12px;
-  min-width: 44px;
+  width: 44px;
   height: 64px;
 
   text-align: center;
@@ -512,6 +512,10 @@ body {
 }
 
 .select-control {
+  padding: 14px 20px;
+  margin-right: 70px;
+  min-width: 292px;
+
   font-family: inherit;
   color: inherit;
   font-size: 18px;
