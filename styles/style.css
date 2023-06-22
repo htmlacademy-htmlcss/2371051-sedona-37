@@ -432,8 +432,8 @@ body {
 
 .footer-social-link {
   display: block;
-  width: 47px;
-  height: 40px;
+  min-width: 47px;
+  min-height: 40px;
   outline: auto;
 }
 
@@ -544,6 +544,14 @@ body {
   list-style-type: none;
 }
 
+.view-icon-item {
+  margin-right: 8px;
+}
+
+.view-icon-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .view-icon-button {
   display: block;
   width: 48px;
@@ -578,10 +586,25 @@ body {
   text-transform: uppercase;
 }
 
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+  list-style-type: none
+}
+
 .pagination-link {
+  display: block;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 12px 10px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -592,12 +615,18 @@ body {
   background-color: #F2F2F2;
 }
 
+.pagination-link-points {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 .housing-catalog {
   padding: 50px 70px 60px;
 }
 
 .sorting-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .housing-card-list {
@@ -612,11 +641,4 @@ body {
 
 .housing-card-item {
   width: 340px;
-}
-
-.pagination-list {
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  list-style-type: none
 }
