@@ -610,6 +610,7 @@ body {
 }
 
 .housing-card-img-link {
+  display: block;
   grid-column: 1 / -1;
   order: -1;
 }
