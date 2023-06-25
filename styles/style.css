@@ -584,6 +584,10 @@ body {
 .housing-card-item {
   width: 340px;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
 
   border-radius: 4px;
   border: 1px solid #E6E6E6;
@@ -600,7 +604,14 @@ body {
 }
 
 .housing-card-link {
+  grid-column: 1 / -1;
+
   text-decoration: none;
+}
+
+.housing-card-img-link {
+  grid-column: 1 / -1;
+  order: -1;
 }
 
 .housing-card-price {
@@ -612,6 +623,15 @@ body {
 }
 
 .housing-card-rating {
+  grid-column: -2 / -1;
+  min-height: 37px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  background-color: #F2F2F2;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
