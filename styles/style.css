@@ -132,7 +132,9 @@ body {
 
 .button {
   display: inline-block;
-  padding: 8px 34px;
+  padding: 8px 10px;
+  min-width: 140px;
+  min-height: 36px;
 
   font-family: inherit;
   font-weight: 700;
@@ -148,16 +150,7 @@ body {
 }
 
 .want-here-button {
-  min-width: 120px;
-}
-
-.input {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  border: 0;
-  background-color: #F2F2F2;
+  min-width: 160px;
 }
 
 .button-blue {
@@ -409,6 +402,28 @@ body {
 .subscribe-form {
   display: flex;
   justify-content: center;
+}
+
+.subscribe-button {
+  width: 232px;
+   font-size: 20px;
+  line-height: 36px;
+
+  border-radius: 0 4px 4px 0;
+}
+
+.input {
+  width: 452px;
+  height: 52px;
+  padding: 12px 20px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  border: 0;
+  background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
 }
 
 .main-footer {
