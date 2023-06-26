@@ -602,6 +602,7 @@ body {
   padding: 20px;
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 212px 1fr;
   row-gap: 16px;
   column-gap: 20px;
 
