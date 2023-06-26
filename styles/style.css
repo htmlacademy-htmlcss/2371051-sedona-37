@@ -69,6 +69,7 @@ body {
 
 .navigation {
   display: flex;
+  min-height: 64px;
   flex-wrap: wrap;
   align-items: center;
   padding-left: 70px;
@@ -111,8 +112,8 @@ body {
 .navigation-icon-link {
   display: block;
   padding: 22px 12px;
-  width: 44px;
-  height: 64px;
+  min-width: 44px;
+  min-height: 64px;
 
   text-align: center;
   text-decoration: none;
@@ -130,8 +131,10 @@ body {
 }
 
 .button {
-  display: block;
-  padding: 8px 50px;
+  display: inline-block;
+  padding: 8px 10px;
+  min-width: 140px;
+  min-height: 36px;
 
   font-family: inherit;
   font-weight: 700;
@@ -146,11 +149,8 @@ body {
   border: 0;
 }
 
-.input {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
+.want-here-button {
+  min-width: 160px;
 }
 
 .button-blue {
@@ -331,10 +331,11 @@ body {
 
 .hotel-search {
   padding: 96px 304px;
+  text-align: center;
 }
 
 .hotel-search-title {
-  margin: 0 auto;
+  margin: 0;
   min-width: 300px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -351,6 +352,12 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.hotel-search-button {
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .subscribe {
@@ -397,6 +404,28 @@ body {
   justify-content: center;
 }
 
+.subscribe-button {
+  width: 232px;
+   font-size: 20px;
+  line-height: 36px;
+
+  border-radius: 0 4px 4px 0;
+}
+
+.input {
+  width: 452px;
+  height: 52px;
+  padding: 12px 20px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  border: 0;
+  background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+}
+
 .main-footer {
   padding: 40px 70px 30px;
   min-height: 120px;
@@ -409,17 +438,18 @@ body {
   margin: 0;
   margin-right: auto;
   padding: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   min-width: 142px;
-  height: 40px;
+  min-height: 40px;
 
   list-style-type: none;
 }
 
 .footer-social-link {
   display: block;
-  padding: 0 10px;
-  height: 40px;
+  min-width: 47px;
+  min-height: 40px;
   outline: auto;
 }
 
@@ -530,6 +560,14 @@ body {
   list-style-type: none;
 }
 
+.view-icon-item {
+  margin-right: 8px;
+}
+
+.view-icon-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .view-icon-button {
   display: block;
   width: 48px;
@@ -538,15 +576,60 @@ body {
   border-radius: 4px;
 }
 
-.housing-card-link {
-  text-decoration: none;
+.housing-catalog {
+  padding: 50px 70px 60px;
+}
+
+.sorting-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.housing-card-list {
+  width: 1060px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.housing-card-item {
+  width: 340px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 212px 1fr;
+  row-gap: 16px;
+  column-gap: 20px;
+
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
 }
 
 .housing-card-title {
+  margin: 0;
+  padding: 0;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+}
+
+.housing-card-link {
+  grid-column: 1 / -1;
+
+  text-decoration: none;
+}
+
+.housing-card-img-link {
+  display: block;
+  grid-column: 1 / -1;
+  order: -1;
 }
 
 .housing-card-price {
@@ -558,16 +641,42 @@ body {
 }
 
 .housing-card-rating {
+  grid-column: -2 / -1;
+  min-height: 37px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  background-color: #F2F2F2;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 }
 
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+
+  list-style-type: none
+}
+
 .pagination-link {
+  display: block;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 12px 10px;
+  margin-right: 8px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  text-align: center;
   text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -578,31 +687,7 @@ body {
   background-color: #F2F2F2;
 }
 
-.housing-catalog {
-  padding: 50px 70px 60px;
-}
-
-.sorting-wrapper {
-  display: flex;
-}
-
-.housing-card-list {
-  width: 1060px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-type: none;
-}
-
-.housing-card-item {
-  width: 340px;
-}
-
-.pagination-list {
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  list-style-type: none
+.pagination-link-points {
+  color: #000000;
+  background-color: #FFFFFF;
 }
