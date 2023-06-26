@@ -671,6 +671,7 @@ body {
   min-width: 60px;
   min-height: 60px;
   padding: 12px 10px;
+  margin-right: 8px;
 
   font-weight: 700;
   font-size: 20px;
