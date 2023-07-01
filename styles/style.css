@@ -504,6 +504,18 @@ body {
   margin-left: auto;
 }
 
+.footer-logo-link:hover path{
+  fill: #756157;
+}
+
+.footer-logo-link:focus-visible path{
+  fill: #756157;
+}
+
+.footer-logo-link:active path{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 /* Страница Гостиницы Седоны */
 
 .catalog-filter {
