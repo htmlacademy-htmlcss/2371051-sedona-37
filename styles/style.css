@@ -81,6 +81,7 @@ body {
   position: absolute;
   top: 0;
   display: block;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -186,12 +187,24 @@ body {
 }
 
 .hero {
+  position: relative;
   min-height: 485px;
   margin-bottom: 69px;
 
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.592);
+  background-size: cover;
+}
+
+.hero::before {
+  position: absolute;
+  content: url(../images/divider.svg);
+  display: block;
+  height: 57px;
+  width: 1200px;
+
+  bottom: 0;
 }
 
 .hero-img {
