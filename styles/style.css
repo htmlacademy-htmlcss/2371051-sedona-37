@@ -118,7 +118,18 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
-  outline: auto;
+}
+
+.navigation-icon-link-search {
+  background-image: url(../images/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-icon-link-favorite {
+  background-image: url(../images/favorite-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fav-number {
@@ -128,6 +139,7 @@ body {
   line-height: 10px;
   color: #FFFFFF;
   background-color: #7DB54F;
+  border-radius: 50%;
 }
 
 .button {
