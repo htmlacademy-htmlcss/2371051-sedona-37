@@ -447,10 +447,20 @@ body {
 }
 
 .footer-social-link {
+  position: relative;
   display: block;
   min-width: 47px;
   min-height: 40px;
-  outline: auto;
+  padding: 1px 10px;
+}
+
+.footer-social-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .tel-link {
@@ -606,8 +616,8 @@ body {
   row-gap: 16px;
   column-gap: 20px;
 
-  border-radius: 4px;
-  border: 1px solid #E6E6E6;
+  /* border-radius: 4px;
+  border: 1px solid #E6E6E6; */
 }
 
 .housing-card-title {
