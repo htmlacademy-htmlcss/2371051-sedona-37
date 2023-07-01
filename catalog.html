@@ -11,28 +11,29 @@
     <div class="page-container">
       <header class="main-header" data-test="header">
         <nav class="navigation">
-          <a href="index.html">
-            <img src="images/logo.svg" alt="Логотип туристического городка Седона.">
+          <a class="navigation-logo-link" href="index.html" aria-current="page">
+            <img class="navigation-logo-img" src="images/logo.svg" width="140" height="70"
+              alt="Логотип туристического городка Седона.">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="index.html" class="navigation-link">Главная</a>
+              <a href="#" class="navigation-link navigation-link-current">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#" class="navigation-link">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
+              <a href="catalog.html" class="navigation-link">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-icons-list">
             <li class="navigation-icon">
-              <a href="#" class="navigation-icon-link">
+              <a href="#" class="navigation-icon-link navigation-icon-link-search">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-icon">
-              <a href="#" class="navigation-icon-link">
+              <a href="#" class="navigation-icon-link navigation-icon-link-favorite">
                 <span class="visually-hidden">Избранное</span>
                 <span class="fav-number">12</span>
               </a>
@@ -126,17 +127,17 @@
             </select>
             <ul class="view-icon-list">
               <li class="view-icon-item">
-                <a class="view-icon-button" href="#">
+                <a class="view-icon-button view-icon-button-current view-icon-button-cards" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
               <li class="view-icon-item">
-                <a class="view-icon-button" href="#">
+                <a class="view-icon-button view-icon-button-big" href="#">
                   <span class="visually-hidden">Показать карточку крупно</span>
                 </a>
               </li>
               <li class="view-icon-item">
-                <a class="view-icon-button" href="#">
+                <a class="view-icon-button view-icon-button-list" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
