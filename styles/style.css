@@ -89,13 +89,14 @@ body {
   flex-wrap: wrap;
   margin: 0;
   margin-right: auto;
-  margin-left: 170px;
+  margin-left: 168px;
   padding: 0;
   width: 600px;
   list-style-type: none;
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 16px;
 
@@ -105,6 +106,18 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+
+  content: "";
+  background-color: #756157;
+  height: 2px;
+  right: 16px;
+  left: 16px;
+  bottom: -1px;
+  z-index: 1;
 }
 
 .navigation-icons-list {
