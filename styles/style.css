@@ -394,6 +394,27 @@ body {
   padding-top: 102px;
 }
 
+.services-title-house {
+  background-image: url(../images/house.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 75px 72px;
+}
+
+.services-title-food {
+  background-image: url(../images/burger.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 75px 72px;
+}
+
+.services-title-souvenirs {
+  background-image: url(../images/present.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 75px 72px;
+}
+
 .services-description {
   margin: 0;
   min-width: 230px;
