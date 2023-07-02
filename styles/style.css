@@ -571,6 +571,18 @@ body {
   margin: auto;
 }
 
+.footer-social-link:hover svg {
+  fill: #68A2CA;
+}
+
+.footer-social-link:focus-visible svg {
+  fill: #68A2CA;
+}
+
+.footer-social-link:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .tel-link {
   font-size: 40px;
   line-height: 40px;
@@ -578,6 +590,18 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.tel-link:hover {
+  color: #756157;
+}
+
+.tel-link:focus {
+  color: #756157;
+}
+
+.tel-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-logo-link {
