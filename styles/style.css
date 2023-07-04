@@ -784,11 +784,12 @@ body {
 
 .range-wrapper-inputs {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
 }
 
 .range-input {
   display: block;
+  height: 48px;
   width: 143px;
   padding-right: 50px;
 
@@ -802,11 +803,10 @@ body {
 .inner-label {
   position: absolute;
   display: block;
-  width: 17px;
-  height: 24px;
   color: rgba(0, 0, 0, 0.3);
-  bottom: 12px;
+  top: 12px;
   right: 20px;
+  line-height: 24px;
 }
 
 .catalog-filter-label:nth-of-type(2) .range-input {
@@ -868,6 +868,8 @@ opacity: 30%;
 }
 
 .catalog-filter-title {
+  margin: 0;
+  padding: 0;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
@@ -896,14 +898,16 @@ opacity: 30%;
   background: transparent;
 }
 
+.buttons-wrapper .button {
+  width: 191px;
+}
+
 .buttons-wrapper .button:not(:last-child) {
   margin-bottom: 32px;
 }
 
 .buttons-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  padding-top: 56px;
   width: 191px;
 }
 
@@ -927,7 +931,7 @@ opacity: 30%;
 }
 
 .catalog-filter-group:nth-of-type(2) {
-  margin-right: 140px;
+  margin-right: auto;
 }
 
 .catalog-filter-group:not(:last-child, :nth-of-type(2)) {
