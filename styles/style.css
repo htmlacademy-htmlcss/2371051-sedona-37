@@ -701,7 +701,8 @@ body {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control-input[type="checkbox"]:focus-visible + .control-mark,
+.control-input[type="radio"]:focus-visible + .control-mark {
   outline: 3px solid #83B3D3;
 }
 
@@ -787,9 +788,25 @@ body {
 }
 
 .range-input {
+  display: block;
   width: 143px;
+  padding-right: 50px;
 
   font-weight: 700;
+}
+
+.catalog-filter-label {
+  position: relative;
+}
+
+.inner-label {
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  bottom: 12px;
+  right: 20px;
 }
 
 .catalog-filter-label:nth-of-type(2) .range-input {
@@ -824,11 +841,11 @@ body {
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 60%;
 }
 
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3);
+opacity: 30%;
 }
 
 .breadcrumbs-item:not(:last-of-type) {
@@ -879,6 +896,17 @@ body {
   background: transparent;
 }
 
+.buttons-wrapper .button:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 191px;
+}
+
 .reset-button:hover {
   background: transparent;
   color: rgba(255, 255, 255, 0.6);
@@ -899,10 +927,10 @@ body {
 }
 
 .catalog-filter-group:nth-of-type(2) {
-  margin-right: auto;
+  margin-right: 140px;
 }
 
-.catalog-filter-group:not(:last-child) {
+.catalog-filter-group:not(:last-child, :nth-of-type(2)) {
   margin-right: 70px;
 }
 
