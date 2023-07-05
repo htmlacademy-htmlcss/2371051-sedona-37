@@ -1094,15 +1094,47 @@ body {
   text-decoration: none;
 }
 
+.housing-card-link:hover {
+  text-decoration: underline solid #000000;
+}
+
 .housing-card-img-link {
   display: block;
   grid-column: 1 / -1;
   order: -1;
 }
 
+.housing-card-img-link:hover {
+  opacity: 80%;
+}
+
 .housing-card-price {
   text-align: right;
 }
+
+.stars-four {
+  background-image: url(../images/star.svg), url(../images/star.svg), url(../images/star.svg), url(../images/star.svg);
+  background-repeat: no-repeat;
+  background-position: left, 24px, 48px, 72px;
+}
+
+ /* еще один способ сделать звездочки */
+.stars-three {
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  width: 67px;
+  height: 18px;
+  align-self: center;
+}
+
+.stars-two {
+  background-image: url(../images/star.svg);
+  background-repeat: space;
+  width: 42px;
+  height: 18px;
+  align-self: center;
+}
+
 
 .button-green {
   background-color: #7DB54F;
