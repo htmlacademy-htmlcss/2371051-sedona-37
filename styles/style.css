@@ -202,7 +202,7 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
-  border: 0;
+  border: none;
   cursor: pointer;
 }
 
@@ -574,7 +574,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  border: 0;
+  border: none;
   background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
 }
@@ -766,7 +766,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  border: 0;
+  border: none;
   border-radius: 5px;
   background-color: #FFFFFF;
   cursor: pointer;
@@ -963,7 +963,8 @@ body {
 }
 
 .select-control {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 40px;
   margin-right: 70px;
   height: 49px;
   min-width: 292px;
@@ -976,6 +977,20 @@ body {
   border-radius: 4px;
   border: 2px solid #E5E5E5;
   cursor: pointer;
+
+  background-image: url(../images/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 50% right 20px;
+
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+.select-control::-ms-expand {
+  display: none;
 }
 
 .select-control:hover {
@@ -989,6 +1004,7 @@ body {
 
 .view-icon-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 
@@ -1118,7 +1134,7 @@ body {
   background-position: left, 24px, 48px, 72px;
 }
 
- /* еще один способ сделать звездочки */
+/* еще один способ сделать звездочки */
 .stars-three {
   background-image: url(../images/star.svg);
   background-repeat: space;
