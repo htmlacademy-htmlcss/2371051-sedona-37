@@ -79,6 +79,11 @@ body {
   padding-right: 70px;
 }
 
+.navigation-logo-link:hover {
+  opacity: 70%;
+  z-index: 1;
+}
+
 .navigation-logo-img {
   position: absolute;
   top: 0;
@@ -122,6 +127,10 @@ body {
   z-index: 1;
 }
 
+.navigation-link:hover {
+  opacity: 70%;
+}
+
 .navigation-icons-list {
   margin: 0;
   padding: 0;
@@ -142,6 +151,10 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
+}
+
+.navigation-icon-link:hover {
+  transform: scale(1.1);
 }
 
 .navigation-icon-link-search {
