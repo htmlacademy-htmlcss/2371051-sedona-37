@@ -170,29 +170,40 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="modal-form-label">
+              <span class="modal-form-title">Дата заезда:</span>
+              <input class="modal-form-date" type="text" placeholder="Укажите дату" value="27 апреля 2020">
+            </label>
+            <p class="modal-form-message mistake-message">Мы не можем отправить вас в прошлое.</p>
+            <label class="modal-form-label">
+              <span class="modal-form-title">Дата выезда:</span>
+              <input class="modal-form-date" type="text" placeholder="Укажите дату" value="1 сентября 2023">
+            </label>
+            <p class="modal-form-message">На эти даты есть свободные номера. Пока есть.</p>
+            <label class="modal-form-label">
+              <span class="modal-form-title">Взрослые:</span>
+              <button class="button-plus-minus" type="button">-</button>
+              <input class="modal-input-people" type="text" value="2">
+              <button class="button-plus-minus" type="button">+</button>
+            </label>
+            <label class="modal-form-label">
+              <span class="modal-form-title">Дети:</span>
+              <!-- <span>i</span> -->
+              <button class="button-plus-minus" type="button">-</button>
+              <input class="modal-input-people" type="text" value="2">
+              <button class="button-plus-minus" type="button">+</button>
+            </label>
+            <button class="button button-blue modal-search-button" type="submit">Найти</button>
+          </form>
         </section>
-        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="modal-form-label">Дата заезда:
-            <input class="modal-form-date" type="text" placeholder="27 апреля 2020">
-          </label>
-          <label class="modal-form-label">Дата выезда:
-            <input class="modal-form-date" type="text" placeholder="1 сентября 2023">
-          </label>
-          <label class="modal-form-label">Взрослые:
-            <input class="modal-form-people" type="text" placeholder="2">
-          </label>
-          <label class="modal-form-label">Дети:
-            <input class="modal-form-people" type="text" placeholder="2">
-          </label>
-          <button class="button button-blue modal-search-button" type="submit">Найти</button>
-        </form>
       </div>
     </div>
   </body>
