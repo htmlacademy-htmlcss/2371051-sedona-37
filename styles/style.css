@@ -887,6 +887,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .catalog-filter-form {
@@ -1351,7 +1352,9 @@ body {
   color: #FF5757;
 }
 
-.button-plus-minus {
+.button-number {
+  min-width: 40px;
+  height: 48px;
   margin: 0;
   padding: 14px 10px;
 
@@ -1361,22 +1364,78 @@ body {
   cursor: pointer;
 }
 
+.button-minus {
+  background-image: url(../images/modal-button-minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-plus {
+  background-image: url(../images/modal-button-plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .modal-input-people {
   display: block;
+  width: 31px;
   margin: 0;
-  padding: 14px 10px;
+  padding: 5px 5px;
   font-family: inherit;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   text-align: center;
   border: none;
   background-color: #F2F2F2;
+  align-self: stretch;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.modal-input-people::-webkit-outer-spin-button,
+.modal-input-people::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.modal-input-people[type=number] {
+  -moz-appearance: textfield;
+}
+
+.modal-wrapper-people {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.tooltip-button {
+  width: 26px;
+  height: 26px;
+  margin-right: 46px;
+  border: none;
+  border-radius: 50%;
+  background-color: #83B3D3;
+  background-image: url(../images/tooltip-info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-wrapper-people .modal-form-title {
+  margin-right: 46px;
 }
 
 .modal-search-button {
   display: block;
+  width: 100%;
+  min-height: 60px;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  border-radius: 10px;
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
