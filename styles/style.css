@@ -218,7 +218,7 @@ body {
   background-color: #615048;
 }
 
-.button:focus {
+.button:focus-visible {
   background-color: #615048;
 }
 
@@ -235,7 +235,7 @@ body {
   background-color: #68A2CA;
 }
 
-.button-blue:focus {
+.button-blue:focus-visible {
   background-color: #68A2CA;
 }
 
@@ -522,6 +522,7 @@ body {
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-color: #82B3D3;
+  background-size: cover;
   color: #FFFFFF;
 }
 
@@ -583,6 +584,10 @@ body {
   background-color: #E6E6E6;
 }
 
+.input:focus-visible {
+  background-color: #E6E6E6;
+}
+
 .main-footer {
   padding: 40px 70px 30px;
   min-height: 120px;
@@ -624,7 +629,7 @@ body {
   fill: #68A2CA;
 }
 
-.footer-social-link:focus svg {
+.footer-social-link:focus-visible svg {
   fill: #68A2CA;
 }
 
@@ -645,7 +650,7 @@ body {
   color: #756157;
 }
 
-.tel-link:focus {
+.tel-link:focus-visible {
   color: #756157;
 }
 
@@ -665,7 +670,7 @@ body {
   fill: #756157;
 }
 
-.footer-logo-link:focus path {
+.footer-logo-link:focus-visible path {
   fill: #756157;
 }
 
@@ -776,7 +781,7 @@ body {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
-.range-toggle:focus {
+.range-toggle:focus-visible {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -930,7 +935,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.reset-button:focus {
+.reset-button:focus-visible {
   background: transparent;
 }
 
@@ -1161,7 +1166,7 @@ body {
   background-color: #6C9E42;
 }
 
-.button-green:focus {
+.button-green:focus-visible {
   background-color: #6C9E42;
 }
 
@@ -1219,7 +1224,7 @@ body {
   background-color: #68A2CA;
 }
 
-.pagination-link:not(.pagination-link-current, .pagination-link-points):focus {
+.pagination-link:not(.pagination-link-current, .pagination-link-points):focus-visible {
   background-color: #68A2CA;
 }
 
@@ -1306,6 +1311,7 @@ body {
 }
 
 .modal-form-title {
+  position: relative;
   margin: 0;
   margin-right: auto;
   padding: 0;
@@ -1314,6 +1320,7 @@ body {
   line-height: 24px;
   text-transform: capitalize;
   color: #000000;
+  flex-shrink: 1;
 }
 
 .modal-form-label {
@@ -1321,12 +1328,13 @@ body {
   align-items: center;
 }
 
-.modal-form-date {
+.modal-input-date {
   height: 48px;
   width: 440px;
   padding-left: 20px;
   padding-right: 50px;
   margin-bottom: 4px;
+  flex-shrink: 0;
 
   background-color: #F2F2F2;
   font-family: inherit;
@@ -1335,14 +1343,16 @@ body {
   line-height: 24px;
   border: none;
   border-radius: 4px;
-
+  background-image: url(../images/calendar-icon.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 50% right 20px;
 }
 
 .modal-form-message {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   margin-bottom: 23px;
-  margin-left: 137px;
+  padding-left: 157px;
   color: #333333;
   font-size: 16px;
   line-height: 21px;
@@ -1380,7 +1390,7 @@ body {
   display: block;
   width: 31px;
   margin: 0;
-  padding: 5px 5px;
+  padding: 14px 5px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -1388,7 +1398,10 @@ body {
   text-align: center;
   border: none;
   background-color: #F2F2F2;
-  align-self: stretch;
+}
+
+.modal-input-people:hover {
+  background-color: #E6E6E6;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -1412,17 +1425,43 @@ body {
 .tooltip-button {
   width: 26px;
   height: 26px;
-  margin-right: 46px;
   border: none;
   border-radius: 50%;
   background-color: #83B3D3;
   background-image: url(../images/tooltip-info.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .modal-wrapper-people .modal-form-title {
   margin-right: 46px;
+}
+
+/* .modal-wrapper-people .modal-form-label:nth-of-type(2) .modal-form-title {
+  margin-right: 10px;
+} */
+
+.tooltip-text {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  display: block;
+  width: 256px;
+  min-height: 143px;
+  padding: 15px 18px 18px 22px;
+
+  border-radius: 10px;
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.tooltip {
+  position: absolute;
 }
 
 .modal-search-button {
