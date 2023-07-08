@@ -1423,6 +1423,9 @@ body {
 }
 
 .tooltip-button {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
   width: 26px;
   height: 26px;
   border: none;
@@ -1438,9 +1441,18 @@ body {
   margin-right: 46px;
 }
 
-/* .modal-wrapper-people .modal-form-label:nth-of-type(2) .modal-form-title {
+.tooltip-wrapper {
+  display: block;
+  min-width: 85px;
+  margin: 0;
+  margin-right: 46px;
+  padding: 0;
+  position: relative;
+}
+
+.tooltip-wrapper .modal-form-title {
   margin-right: 10px;
-} */
+}
 
 .tooltip-text {
   position: absolute;
@@ -1449,7 +1461,7 @@ body {
   display: block;
   width: 256px;
   min-height: 143px;
-  padding: 15px 18px 18px 22px;
+  padding: 21px 22px 22px 22px;
 
   border-radius: 10px;
   background-color: #333333;
@@ -1458,6 +1470,20 @@ body {
   text-transform: none;
   font-weight: 400;
   line-height: 20px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url("../images/tooltip-arrow.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tooltip {
