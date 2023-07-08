@@ -179,46 +179,48 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-form-label">
-              <span class="modal-form-title">Дата заезда:</span>
-              <input class="input modal-input-date" type="text" name="modal-date-check-in" placeholder="Укажите дату"
-                value="27 апреля 2020">
-            </label>
-            <p class="modal-form-message mistake-message">Мы не можем отправить вас в прошлое.</p>
-            <label class="modal-form-label">
-              <span class="modal-form-title">Дата выезда:</span>
-              <input class="input modal-input-date" type="text" name="modal-date-check-out" placeholder="Укажите дату"
-                value="1 сентября 2023">
-            </label>
-            <p class="modal-form-message">На эти даты есть свободные номера. Пока есть.</p>
+            <p class="field-group">
+              <label class="modal-form-label date-label" for="check-in-date-input">Дата заезда:</label>
+              <span class="modal-form-title"></span>
+              <input class="input modal-input-date" id="check-in-date-input" type="text" name="modal-date-check-in"
+                placeholder="Укажите дату" value="27 апреля 2020">
+            </p>
+            <span class="modal-form-message mistake-message">Мы не можем отправить вас в прошлое.</span>
+            <p class="field-group">
+              <label class="modal-form-label date-label" for="check-out-date-input">Дата выезда:</label>
+              <input class="input modal-input-date" id="check-out-date-input" type="text" name="modal-date-check-out"
+                placeholder="Укажите дату" value="1 сентября 2023">
+            </p>
+            <span class="modal-form-message">На эти даты есть свободные номера. Пока есть.</span>
             <div class="modal-wrapper-people">
-              <label class="modal-form-label">
-                <span class="modal-form-title">Взрослые:</span>
+              <p class="field-group adults-group">
+                <label class="modal-form-label" for="adults-input">Взрослые:</label>
                 <button class="button-number button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество взрослых</span>
                 </button>
-                <input class="modal-input-people" type="number" name="adults-number" value="2">
+                <input class="modal-input-people" id="adults-input" type="number" name="adults-number" value="2">
                 <button class="button-number button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество взрослых</span>
                 </button>
-              </label>
-              <label class="modal-form-label">
-                <span class="tooltip-wrapper">
-                  <span class="modal-form-title">Дети:</span>
+              </p>
+              <p class="field-group child-group">
+                <span class="modal-form-label">
+                  <label class="modal-form-label" for="child-input">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-button" type="button" aria-labelledby="tooltip-text-child"></button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-text-child">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    <span class="tooltip-text" role="tooltip" id="tooltip-text-child">Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до 18
                       лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
                 <button class="button-number button-minus" type="button">
                   <span class="visually-hidden">Уменьшить количество детей</span>
                 </button>
-                <input class="modal-input-people" type="number" name="child-number" value="2">
+                <input class="modal-input-people" id="child-input" type="number" name="child-number" value="2">
                 <button class="button-number button-plus" type="button">
                   <span class="visually-hidden">Увеличить количество детей</span>
                 </button>
-              </label>
+              </p>
             </div>
             <button class="button button-blue modal-search-button" type="submit">Найти</button>
           </form>

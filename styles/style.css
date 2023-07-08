@@ -1302,22 +1302,25 @@ body {
   color: #000000;
 }
 
-.modal-form-title {
-  position: relative;
+.field-group {
   margin: 0;
-  margin-right: auto;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-form-label {
+  position: relative;
+  color: #000000;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  color: #000000;
-  flex-shrink: 1;
 }
 
-.modal-form-label {
-  display: flex;
-  align-items: center;
+.date-label {
+  width: calc(100% - 440px);
 }
 
 .modal-input-date {
@@ -1341,6 +1344,7 @@ body {
 }
 
 .modal-form-message {
+  display: block;
   margin: 0;
   padding: 0;
   margin-bottom: 23px;
@@ -1353,6 +1357,7 @@ body {
 .mistake-message {
   color: #ff5757;
 }
+
 
 .button-number {
   min-width: 40px;
@@ -1429,23 +1434,6 @@ body {
   cursor: pointer;
 }
 
-.modal-wrapper-people .modal-form-title {
-  margin-right: 46px;
-}
-
-.tooltip-wrapper {
-  display: block;
-  min-width: 85px;
-  margin: 0;
-  margin-right: 46px;
-  padding: 0;
-  position: relative;
-}
-
-.tooltip-wrapper .modal-form-title {
-  margin-right: 10px;
-}
-
 .tooltip-text {
   position: absolute;
   right: 50%;
@@ -1499,5 +1487,5 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
