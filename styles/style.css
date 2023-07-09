@@ -1200,12 +1200,15 @@ body {
   border-top: 1px solid #e6e6e6;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
   display: block;
   min-width: 60px;
   min-height: 60px;
   padding: 12px 10px;
-  margin-right: 8px;
 
   font-weight: 700;
   font-size: 20px;
