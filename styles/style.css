@@ -620,15 +620,15 @@ body {
   margin: auto;
 }
 
-.footer-social-link:hover svg {
+.footer-social-link:hover .footer-social-svg {
   fill: #68a2ca;
 }
 
-.footer-social-link:focus-visible svg {
+.footer-social-link:focus-visible .footer-social-svg {
   fill: #68a2ca;
 }
 
-.footer-social-link:active svg {
+.footer-social-link:active .footer-social-svg {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -1273,9 +1273,11 @@ body {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background-image: url("../images/close-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.close-image {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .modal-close-button:hover {
@@ -1286,9 +1288,10 @@ body {
   background-color: #e6e6e6;
 }
 
-.modal-close-button:active {
-  opacity: 30%;
+.modal-close-button:active,
+.modal-close-button:active .close-image {
   background-color: #e6e6e6;
+  fill-opacity: 30%;
 }
 
 .modal-title {
@@ -1445,6 +1448,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.tooltip-button:hover,
+.tooltip-button:focus-visible {
+  background-color: #68a2ca;
 }
 
 .tooltip-text {
