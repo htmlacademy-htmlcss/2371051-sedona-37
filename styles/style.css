@@ -836,6 +836,7 @@ body {
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
@@ -868,10 +869,14 @@ body {
 }
 
 .breadcrumbs-item:not(:last-of-type)::after {
-  content: url("../images/breadcrumbs-arrow.svg");
+  content: "";
   position: absolute;
+  width: 8px;
+  height: 21px;
   top: 0;
-  left: 23px;
+  right: 10px;
+  background-image: url("../images/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs-link-main {
