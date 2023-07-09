@@ -278,7 +278,7 @@ body {
 }
 
 .about-text {
-  width: 620px;
+  width: 630px;
   margin: 0 auto;
   margin-bottom: 25px;
   font-weight: 700;
@@ -290,7 +290,7 @@ body {
 }
 
 .reasons-text {
-  width: 651px;
+  width: 660px;
   margin: 0 auto;
   margin-bottom: 90px;
 
@@ -317,7 +317,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 70px 85px;
+  padding: 70px 80px;
+  width: 400px;
+  flex-shrink: 0;
 }
 
 .advantages-image {
@@ -369,7 +371,7 @@ body {
   display: flex;
 }
 
-.advantages-item:nth-child(5n) {
+.background-blue-reverse {
   flex-direction: row-reverse;
 }
 
@@ -382,7 +384,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 400px;
-  padding: 70px 85px;
+  padding: 70px 55px;
 
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -392,7 +394,7 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 400px;
-  padding: 70px 85px;
+  padding: 70px 55px;
 
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -808,6 +810,15 @@ body {
   padding-right: 50px;
 
   font-weight: 700;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.input[type="number"],
+.input[type="number"]:hover,
+.input[type="number"]:focus-visible {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .catalog-filter-label {
@@ -898,6 +909,7 @@ body {
 
 .catalog-filter-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-list {
@@ -984,11 +996,12 @@ body {
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: bottom 50% right 20px;
-
+  background-color: #ffffff;
   /* for Firefox */
   -moz-appearance: none;
   /* for Chrome */
   -webkit-appearance: none;
+  appearance: none;
 }
 
 /* For IE10 */
@@ -1412,6 +1425,7 @@ body {
 .modal-input-people {
   display: block;
   width: 31px;
+  height: 48px;
   margin: 0;
   padding: 14px 5px;
   font-family: inherit;
@@ -1452,6 +1466,7 @@ body {
 }
 
 .tooltip-button {
+  display: block;
   padding: 0;
   margin: 0;
   margin-bottom: 15px;
@@ -1505,6 +1520,7 @@ body {
 
 .tooltip {
   position: absolute;
+  display: inline-block;
   margin-left: 10px;
 }
 
@@ -1525,5 +1541,5 @@ body {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
