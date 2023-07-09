@@ -1381,16 +1381,24 @@ body {
   cursor: pointer;
 }
 
-.button-minus {
-  background-image: url("../images/modal-button-minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.button-number:hover,
+.button-number:hover .button-minus-svg,
+.button-number:hover .button-plus-svg {
+  fill: #000000;
+  fill-opacity: 1;
+  background-color: #e6e6e6;
 }
 
-.button-plus {
-  background-image: url("../images/modal-button-plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.button-number:focus-visible .button-minus-svg,
+.button-number:focus-visible .button-plus-svg {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.button-number:active .button-minus-svg,
+.button-number:active .button-plus-svg {
+  fill: #000000;
+  fill-opacity: 0.2;
 }
 
 .modal-input-people {
