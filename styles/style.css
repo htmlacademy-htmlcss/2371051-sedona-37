@@ -49,6 +49,11 @@ body {
   min-width: 1200px;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .page-container {
   margin: 0 auto;
   display: flex;
@@ -152,6 +157,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
+  background-color: #ffffff;
 }
 
 .navigation-icon-link:hover {
@@ -257,7 +263,7 @@ body {
 
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
-  background-color: rgba(131, 179, 211, 0.59);
+  background-color: #3f5e72;
   background-size: cover;
 }
 
@@ -330,7 +336,6 @@ body {
 
 .advantages-image {
   display: block;
-  object-fit: cover;
   width: 100%;
   height: auto;
 }
@@ -696,7 +701,7 @@ body {
 
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
-  background-color: #82b3d3;
+  background-color: #68a2ca;
   color: #ffffff;
   background-size: cover;
 }
@@ -1066,6 +1071,8 @@ body {
   height: 48px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-color: #ffffff;
+  color: inherit;
 }
 
 .view-icon-button-current {
@@ -1175,7 +1182,6 @@ body {
   background-position: left, 24px, 48px, 72px;
 }
 
-/* еще один способ сделать звездочки */
 .stars-three {
   background-image: url("../images/star.svg");
   background-repeat: space;
@@ -1509,6 +1515,7 @@ body {
   border: none;
   border-radius: 50%;
   background-color: #83b3d3;
+  color: #ffffff;
   background-image: url("../images/tooltip-info.svg");
   background-repeat: no-repeat;
   background-position: center;
