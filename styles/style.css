@@ -106,6 +106,7 @@ body {
   position: relative;
   display: block;
   padding: 20px 16px;
+  max-width: 200px;
 
   font-weight: 700;
   font-size: 20px;
@@ -206,10 +207,6 @@ body {
   cursor: pointer;
 }
 
-.button:disabled {
-  background-color: #e5e5e5;
-}
-
 .want-here-button {
   min-width: 160px;
   max-width: 300px;
@@ -228,6 +225,10 @@ body {
   background-color: #756157;
 }
 
+.button:disabled {
+  background-color: #e5e5e5;
+}
+
 .button-blue {
   background-color: #82b3d3;
 }
@@ -243,6 +244,10 @@ body {
 .button-blue:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue:disabled {
+  background-color: #e5e5e5;
 }
 
 .hero {
@@ -586,6 +591,10 @@ body {
   background-color: #e6e6e6;
 }
 
+.input:disabled {
+  opacity: 0.3;
+}
+
 .main-footer {
   display: flex;
   flex-wrap: wrap;
@@ -696,6 +705,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+  max-width: 200px;
 }
 
 .control {
@@ -729,6 +739,11 @@ body {
   background-image: url("../images/check-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark,
+.control-input[type="radio"]:disabled + .control-mark {
+  opacity: 0.3;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -791,6 +806,10 @@ body {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
+.range-toggle:disabled {
+  outline: rgb(201, 84, 84);
+}
+
 .toggle-min {
   top: -8px;
   left: 0;
@@ -808,7 +827,7 @@ body {
 
 .range-input {
   display: block;
-  height: 48px;
+  min-height: 48px;
   width: 143px;
   padding-right: 50px;
 
@@ -972,6 +991,7 @@ body {
 .housing-filter-title {
   margin: 0;
   margin-right: auto;
+  max-width: 460px;
 
   font-weight: 700;
   font-size: 30px;
@@ -1017,13 +1037,15 @@ body {
 }
 
 .select-control:disabled {
-  border-color: rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
+  border-color: #000000;
+  color: #000000;
+  opacity: 0.3;
 }
 
 .view-icon-list {
   display: flex;
   flex-wrap: wrap;
+  width: 160px;
   padding: 0;
   margin: 0;
 
@@ -1080,7 +1102,7 @@ body {
 }
 
 .housing-catalog {
-  padding: 50px 70px 60px;
+  padding: 50px 70px 52px;
 }
 
 .sorting-wrapper {
@@ -1188,6 +1210,10 @@ body {
   background-color: #7db54f;
 }
 
+.button-green:disabled {
+  background-color: #e5e5e5;
+}
+
 .housing-card-rating {
   grid-column: -2 / -1;
   min-height: 37px;
@@ -1214,6 +1240,10 @@ body {
 
   list-style-type: none;
   border-top: 1px solid #e6e6e6;
+}
+
+.pagination-item {
+  margin-bottom: 8px;
 }
 
 .pagination-item:not(:last-child) {
