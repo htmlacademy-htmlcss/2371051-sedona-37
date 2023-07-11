@@ -680,15 +680,15 @@ img {
   display: block;
 }
 
-.footer-logo-link:hover path {
+.footer-logo-link:hover .footer-logo-svg {
   fill: #756157;
 }
 
-.footer-logo-link:focus-visible path {
+.footer-logo-link:focus-visible .footer-logo-svg {
   fill: #756157;
 }
 
-.footer-logo-link:active path {
+.footer-logo-link:active .footer-logo-svg {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -1030,11 +1030,6 @@ img {
   /* for Chrome */
   -webkit-appearance: none;
   appearance: none;
-}
-
-/* For IE10 */
-.select-control::-ms-expand {
-  display: none;
 }
 
 .select-control:hover {
