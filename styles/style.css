@@ -376,8 +376,9 @@ img {
 }
 
 .advantages-description {
+  width: 240px;
+  margin: 0 auto;
   text-align: center;
-  margin: 0;
 }
 
 .background-blue {
@@ -534,7 +535,7 @@ img {
 .subscribe-with-background {
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
-  background-color: #82b3d3;
+  background-color: #274949;
   background-size: cover;
   color: #ffffff;
 }
@@ -582,7 +583,7 @@ img {
 .input {
   width: 452px;
   min-height: 52px;
-  padding: 12px 20px;
+  padding: 0 20px;
 
   font-family: inherit;
   font-size: 18px;
@@ -706,7 +707,7 @@ img {
 
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
-  background-color: #68a2ca;
+  background-color: #645a5a;
   color: #ffffff;
   background-size: cover;
 }
@@ -738,6 +739,10 @@ img {
 
 .control:hover {
   opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:focus-visible + .control-mark,
@@ -849,8 +854,7 @@ img {
 .input[type="number"],
 .input[type="number"]:hover,
 .input[type="number"]:focus-visible {
-    appearance: none;
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .catalog-filter-label {
@@ -1011,7 +1015,7 @@ img {
 }
 
 .select-control {
-  padding-left: 20px;
+  padding-left: 18px;
   padding-right: 40px;
   margin-right: 70px;
   height: 49px;
@@ -1028,7 +1032,7 @@ img {
 
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: bottom 50% right 20px;
+  background-position: bottom 50% right 18px;
   background-color: #ffffff;
   /* for Firefox */
   -moz-appearance: none;
@@ -1396,7 +1400,7 @@ img {
 }
 
 .modal-input-date {
-  height: 48px;
+  min-height: 48px;
   width: 440px;
   padding-left: 20px;
   padding-right: 50px;
