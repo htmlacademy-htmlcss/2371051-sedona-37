@@ -220,7 +220,7 @@ img {
 
 .want-here-button {
   min-width: 160px;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 .button:hover {
@@ -724,6 +724,7 @@ img {
   display: block;
   padding-left: 36px;
   line-height: 23px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -822,7 +823,7 @@ img {
 }
 
 .range-toggle:disabled {
-  outline: rgb(201, 84, 84);
+  outline: 2px solid rgb(201, 84, 84);
 }
 
 .toggle-min {
