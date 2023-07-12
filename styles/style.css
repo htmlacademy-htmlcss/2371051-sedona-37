@@ -1017,12 +1017,12 @@ img {
   background: transparent;
 }
 
-.catalog-filter-group:nth-of-type(2) {
-  margin-right: auto;
+.catalog-filter-group:not(:last-child) {
+  margin-right: 70px;
 }
 
-.catalog-filter-group:not(:last-child, :nth-of-type(2)) {
-  margin-right: 70px;
+.catalog-filter-group:nth-of-type(2n) {
+  margin-right: auto;
 }
 
 .housing-filter-title {
