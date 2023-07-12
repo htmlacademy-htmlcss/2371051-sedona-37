@@ -238,6 +238,7 @@ img {
 
 .button:disabled {
   background-color: #e5e5e5;
+  cursor: default;
 }
 
 .button-blue {
@@ -259,6 +260,7 @@ img {
 
 .button-blue:disabled {
   background-color: #e5e5e5;
+  cursor: default;
 }
 
 .hero {
@@ -594,7 +596,7 @@ img {
   border-radius: 4px 0 0 4px;
 }
 
-.input:hover {
+.input:hover:not(:disabled) {
   background-color: #e6e6e6;
 }
 
@@ -797,12 +799,12 @@ img {
 }
 
 .control-input:hover:not(:disabled),
-.control:hover {
+.control-input:hover:not(:disabled) + .control {
   opacity: 0.6;
 }
 
 .control-input:active:not(:disabled),
-.control:active {
+.control-input:active:not(:disabled) + .control {
   opacity: 0.3;
 }
 
@@ -844,7 +846,7 @@ img {
   cursor: pointer;
 }
 
-.range-toggle:hover {
+.range-toggle:hover:not(:disabled) {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -858,7 +860,7 @@ img {
 }
 
 .range-toggle:disabled {
-  outline: 2px solid rgb(201, 84, 84);
+  outline: 3px solid rgb(201, 84, 84);
 }
 
 .toggle-min {
@@ -1243,6 +1245,7 @@ img {
 
 .button-green:disabled {
   background-color: #e5e5e5;
+  cursor: default;
 }
 
 .housing-card-rating {
@@ -1467,9 +1470,9 @@ img {
   cursor: pointer;
 }
 
-.button-number:hover,
-.button-number:hover .button-minus-svg,
-.button-number:hover .button-plus-svg {
+.button-number:hover:not(:disabled),
+.button-number:hover:not(:disabled) .button-minus-svg,
+.button-number:hover:not(:disabled) .button-plus-svg {
   fill: #000000;
   fill-opacity: 1;
   background-color: #e6e6e6;
@@ -1485,6 +1488,11 @@ img {
 .button-number:active .button-plus-svg {
   fill: #000000;
   fill-opacity: 0.2;
+}
+
+.button-number:disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .modal-input-people {
