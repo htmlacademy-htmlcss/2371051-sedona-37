@@ -119,8 +119,7 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="visually-hidden" for="subscribe-input">Введите ваш e-mail.</label>
-            <input class="input" id="subscribe-input" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
+            <input class="input" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
             <button class="button button-blue subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
@@ -173,7 +172,7 @@
       </footer>
     </div>
 
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <div class="modal modal-search">
         <button class="modal-close-button" type="button">
           <svg class="close-image" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
@@ -183,11 +182,12 @@
           </svg>
           <span class="visually-hidden">Закрыть.</span>
         </button>
-        <section class="modal-content">
+        <section class="modal-content" data-test="modal">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="modal-form-label date-label" for="check-in-date-input">Дата заезда:</label>
+              <span class="modal-form-title"></span>
               <input class="input modal-input-date" id="check-in-date-input" type="text" name="modal-date-check-in"
                 placeholder="Укажите дату" value="27 апреля 2020" required>
             </p>
