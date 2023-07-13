@@ -1292,18 +1292,15 @@ img {
   border-radius: 4px;
 }
 
-.pagination-link:not(.pagination-link-current,
-.pagination-link-points):hover {
+.pagination-link:not(.pagination-link-current, .pagination-link-points):hover {
   background-color: #68a2ca;
 }
 
-.pagination-link:not(.pagination-link-current,
-.pagination-link-points):focus-visible {
+.pagination-link:not(.pagination-link-current, .pagination-link-points):focus-visible {
   background-color: #68a2ca;
 }
 
-.pagination-link:not(.pagination-link-current,
-.pagination-link-points):active {
+.pagination-link:not(.pagination-link-current, .pagination-link-points):active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
