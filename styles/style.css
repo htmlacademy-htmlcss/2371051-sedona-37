@@ -398,24 +398,15 @@ img {
   color: #ffffff;
 }
 
-.background-light-blue {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 400px;
-  padding: 70px 55px;
-
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
 .background-light {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 400px;
-  padding: 70px 55px;
+  padding: 113px 55px 112px 55px;
 
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.background-light:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .visit-sedona {
@@ -1017,12 +1008,12 @@ img {
   background: transparent;
 }
 
-.catalog-filter-group:nth-of-type(2) {
-  margin-right: auto;
+.catalog-filter-group:not(:last-child) {
+  margin-right: 70px;
 }
 
-.catalog-filter-group:not(:last-child, :nth-of-type(2)) {
-  margin-right: 70px;
+.catalog-filter-group:nth-of-type(2n) {
+  margin-right: auto;
 }
 
 .housing-filter-title {
